@@ -9,33 +9,32 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <header>
-            <div class="top-header">
-                <div class="logo"> 
-                    <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
-                </div>
-                <div class="form" action="#" method="GET">
-                    <div class="input">Buscar productos, marcas y más</div>
-                    <div class="submit"><i class="fa fa-search"></i></div>
-                </div>
-                <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        <header class="main-header">
+            <div class="main-header-top-bar">
+                <img src="/images/logo-mercado-liebre.svg" class="logo" >
+                <h2 class="copy-header">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    Comprá en cuotas y sin tarjeta de crédito
+                </h2>
             </div>
-            <nav>
-                <ul>
+            <a href="#" class="hamburguer-button">
+                <i class="fas fa-bars"></i>
+            </a>
+            <nav class="main-navbar">
+                <ul class="left-navbar">
                     <li><a href="#">Ofertas</a></li>
-                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Tiendas</a></li>
                     <li><a href="#">Vender</a></li>
                     <li><a href="#">Ayuda</a></li>
                 </ul>
-                <ul>
-                    <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+    
+                <ul class="right-navbar">
+                    <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
                     <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                     <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
                 </ul>
+
             </nav>
-            <div class="burger-menu">
-                <i class="fa fa-bars burger"></i>
-            </div>
         </header>
         <section class="banner">
             <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
@@ -125,35 +124,48 @@
             </section>
         </main>
         <footer>
-            <div class="container">
+            <section class="container">
                 <div class="slide">
-                    <div class="images-footer">
-                        <!  <img src="images/credit-card-solid.svg" class="images-footer" alt="Pagá con tarjeta o efectivo">
-                        <i class="fas fa-credit-card"></i>
+                    <div class="images-footer">                  
+                        <div class=imgfooter>
+                            <i class="fas fa-credit-card imgfooter">
+                            </i>
+                        </div>
+                        <h4>Pagá con Tarjeta o efectivo</h4>
+                        <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
                     </div>
-
-                    <h1>Pagá con Tarjeta o efectivo</h1>
-                    <p><span>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</span></p>
                 </div>
-                <div class="slide">
-                    <div class="images-footer">
-                        <!  <img src="images/gift-solid.svg" class="images-footer" alt="Envío gratis desde $ 2.500">
-                        <i class="fas fa-gift"></i>
-                    </div>
                 
-                    <h1>Envío gratis desde $ 2.500</h1>
-                    <p><span>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</span></p>
-                </div>
+
+                
+
+
                 <div class="slide">
                     <div class="images-footer">
-                        <!<img src="images/user-shield-solid.svg" class="images-footer" alt="Pagá con tarjeta o efectivo">
-                        <i class="fas fa-user-shield"></i>
+                        <div>
+                            <i class="fas fa-gift imgfooter"></i>
+                        </div>
+                        <h4>Envío gratis desde $ 2.500</h4>
+                        <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
                     </div>
-                    <h1>Seguridad, de principio a fin</h1>
-                    <p><span>¿No te gusta? ¡Devolvelo! En MercadoLiebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</span></p>
-        
                 </div>
-            </div>
+
+                <div class="slide">
+                    <div class="images-footer">
+                        <div>
+                            <i class="fas fa-user-shield imgfooter"></i>
+                        </div>
+                        <h4>Seguridad, de principio a fin</h4>
+                        <p>
+                        ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
+                        puedas hacer, porque estás siempre protegid@.
+                        
+                        </p>
+                    </div>
+                </div>
+
+
+            </section>
         </footer>
         
     </body>
