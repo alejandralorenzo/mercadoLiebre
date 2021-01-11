@@ -38,45 +38,50 @@
         </header>
         <main class="register">
             <section class="section-register">
-                <h2 class="register-h2">Registrate</h2>
+                
                 <form action="/" method="POST">
-                    <div class="field">
+                    
+                    <div class="field-div">
+                        <h2 class="register-h2">Registrate</h2>
+                    </div>    
+                    <div class="field-div">
                         <label for="name" class="label-field">Nombre y Apellido:</label>
-                        <input type="text" name="name" id="name" placeholder="Nombre y Apellido" class="field-text">
+                        <input type="text" name="name" id="name" placeholder="Nombre y Apellido" class="field-text" minlength="3">
                     </div>
-                    <div class="field">
+                    <div class="field-div">
                         <label for="name" class="label-field">Nombre de usuario:</label>
-                        <input type="text" name="user" id="name" placeholder="Nombre de usuario" class="field-text">
+                        <input type="text" name="user" id="user" placeholder="Nombre de usuario" class="field-text" minlength="3">
                     </div>
-                    <div class="field">
+                    <div class="field-div">
                         <label for="name" class="label-field">E-mail:</label>
-                        <input type="email" name="email" id="name" placeholder="E-mail" class="field-text">
+                        <input type="email" name="email" id="email" placeholder="E-mail" class="field-text" minlength="3">
                     </div>
-                    <div class="field">
+                    <div class="field-div">
                         <label for="birth_date" class="label-field">Fecha de nacimiento:</label>
                     
-                        <input type="date" id="birth_date"  name="birth_date" class="field-date">
+                        <input type="date" id="birth_date"  name="birth_date" class="field-date" minlength="3">
                     </div>
                     
-                    <div class="field">
+                    <div class="field-div">
                         <label for="name" class="label-field">Dirección:</label>
-                        <input type="text" name="address" placeholder="Domicilio">
+                        <input type="text" name="address" id="address" placeholder="Domicilio" class="field-text" minlength="3">
                     </div>
                     
-                    <h4 class="register-h4">Perfil del usuario</h4>
-                    <div class="field">
+                    
+                    <div class="field-div">
+                        <label for="profile">Perfil del usuario:</label>
                         <div class="profile">
                             <label>
-                            <input type="radio" name="profile" value="buy" id="buy" checked>Comprar
+                            <input type="radio" name="profile" value="buy" id="buy" checked>Comprador
                             </label>
                             <label>
-                            <input type="radio" name="profile" value="sell" id="sell">Vender
+                            <input type="radio" name="profile" value="sell" id="sell">Vendedor
                             </label>
                         </div>
                     </div>
                     
-                    <div class="field">
-                        <h4 class="register-h4">Intereses</h4>
+                    <div class="field-div">
+                        <label for="interests">Categoría de interés:</label>
                             <div class="interests">
                             <div>
                                 <input type="checkbox" name="interests" value="a" id="a">
@@ -100,20 +105,27 @@
                             </div>
                         </div>
                     </div>
-                    <div class="field">
-                        <h4 class="register-h4">Elegí tu foto de usuario</h4>
-                        <input type="file" name="avatar">
+                    <div class="field-div">
+                        <label for="file">Foto de usuario:</label>
+                        <input type="input-text" name="avatar" id="archive-button" class="archive" accept=".jpg" multiple="" hidden="">
+                        <label for="archive-button" class="archive-button">Elige tu archivo</label>
+
                     </div>
-                    <div class="field">
-                    <input type="password" name="pass" placeholder="Elegí tu contraseña">
+
+                    <div class="field-div">
+                        <label for="name" class="label-field">Contraseña:</label>
+                        <input type="password" name="pass" id="password" placeholder="Elegí tu contraseña" class="field-text" minlength="8" >
+
+
                     </div>
-                    <div class="field">
-                    <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
+                    <div class="field-div">
+                        <label for="name" class="label-field">Confirmá Contraseña:</label>
+                        <input type="password" name="pass_confirm" id = "pass_confirm" placeholder="Confirmá tu contraseña" class="field-text" minlength="8">
                     </div>
-                    
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
-                    
+                    <div class="field-button">
+                        <input type="submit" value="Enviar" class="button-register"> 
+                        <input type="reset" value="Borrar" class="button-register">
+                    </div>
             </form>
         </section>
         </main>

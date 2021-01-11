@@ -37,11 +37,28 @@
             </nav>
         </header>
         <main class="login">
-            <form action="/" method="POST">
-                <input type="text" name="user" placeholder="Nombre de usuario">
-                <input type="password" name="pass" placeholder="Elegí tu contraseña">
-                <input type="submit" class="boton-formulario" value="Enviar">
-            </form>
+            <section class="section-login">
+                <form action="/" method="POST">
+                    <div class="field-div">
+                        <h2 class="register-h2">Ingresá</h2>
+                    </div>
+                    <div class="field-div">
+                        <label for="user" class="label-field">Nombre de Usuario:</label>
+                        <input type="text" name="user" id="user" placeholder="Nombre de Usuario" class="field-text" minlength="3">
+                    </div>
+                    <div class="field-div">
+                        <label for="password" class="label-field">Password:</label>
+                        <input type="password" name="pass" id="pass" placeholder="Elegí tu contraseña" class="field-text" minlength="8">
+                    </div>    
+
+
+                    <div class="field-button-login">
+                        <input type="submit" value="Enviar" class="button-login"> 
+                    </div>
+
+
+                </form>
+            </section>
         </main>
         <footer>
 

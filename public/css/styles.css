@@ -1,5 +1,6 @@
-*{
-        
+*{   
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -10,8 +11,7 @@ body{
 
 .main-header {
     background-color: #EAC926;
-    padding: 20px;
-    
+    padding: 20px; 
     position: relative;
     top: 0;
     z-index: 100;
@@ -49,7 +49,7 @@ body{
     text-decoration: none;
     color: #222222;
     display: inline-block;
-    padding: 5px 0px;
+    padding: 10px 0px;
     font-style: 17px;
 }
 
@@ -62,93 +62,12 @@ h3{
 p{
     font-size: 12px;
 }
-/*
 
-div.top-header{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
-}
-
-header div.top-header p{
-    width: 100%;
-    text-align: center;
-    margin-top: 10px;
-}
-
-header{
-    background-color: #EAC926;
-}
-
-
-header div.logo,
-header .form{
-    width: 50%;
-}
-
-header div.logo{
-    padding: 10px;
-}
-*/
-/*
-header .form{
-    display: flex;
-    align-items: center;
-    padding: 2px;
-    font-size: 11px;
-}
-
-header nav{
-    font-size: 12px;
-    margin-left: 20px;
-}
-
-header ul li{
-    list-style-type: none;
-}
-
-header ul li a{
-    text-decoration: none;
-    color: #000;
-}
-
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-
-
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-}
-*/
-/*
-
-div.burger-menu{
-    text-align: center;
-}
-
-div.burger-menu i{
-    background-color: #0044AA;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 20px;
-    height: 40px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
-    width: 40px;
-}
-*/
 div.last-visit,
 div.offers{
     display: flex;
     flex-wrap: wrap;
+    border: red solid 15px;
 }
 
 .price{
@@ -166,13 +85,27 @@ div.offers{
     font-weight: normal;
 }
 
-h3,
+/*
+h3, .description{
+    color: #666;
+    display: none;
+    margin-top: 20px;
+}
+*/
+
+h3 {
+    color: #666;
+}
+
 .description{
     color: #666;
     display: none;
     margin-top: 20px;
 }
 
+h4 {
+    color: #666;
+}
 
 section.banner img{
     width: 100%;
@@ -192,14 +125,17 @@ main section article{
 
 main section article:hover .description {
     display: block;
+    border:none
 }
 
 main section article:hover {
     box-shadow: 0px 0px 10px rgb(100, 100,100);
 }
 
+
 main section article img{
-    width: 100%;
+    width: 207px;
+    height: 163px;
 }
 
 main section article i,
@@ -207,6 +143,53 @@ main section article i,
     color: #39b54a;
 }
 
+/*buscador*/
+.logo-search {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 5rem;
+}
+
+
+.buscador {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    width: 50%;
+    right: 20px;
+    margin-left: 8rem;
+    height: 2rem;
+    border:none;
+    margin-right: 4rem;
+   margin-top: 1.1rem;
+
+}
+
+.buscador input { 
+    display: flex;
+    border: 0;
+    width: 90%;
+    min-width: 0;
+    padding: .5rem 0 0 1rem;
+    border:none;
+    
+    
+}
+
+.buscador .icono {
+    padding: .5rem;
+    align-items: right;
+    justify-content: right;
+    
+}
+/*
+h4 {
+    margin-left: 8rem;    
+}
+*/
 
 /* Icono camion */
 main section article i {
@@ -223,6 +206,7 @@ main section article i {
     top: -15px;
     transition: all 0.5s;
 }
+
 
 main section article:hover i{
     transform:rotate(-360deg);
@@ -241,14 +225,6 @@ article div.main-article{
     padding: 15px;
 }
 
-.boton-formulario:hover {
-    background-color:  #0022AA;
-    border: none;
-    font-style: 20px;
-    color: #ffffff;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
 
 /*footer*/
 
@@ -291,19 +267,99 @@ article div.main-article{
 
 /*register*/
 .register {
-    flex-wrap: nowrap;
-    align-content: stretch;
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: flex-start;
+    flex-direction: column;
 }
-.section-register {
-    margin: 3rem;
-}
+
 
 .register-h2 {
     color: dimgray;
 }
-.register-h4 {
-    color: dimgray;
+
+.field-date {
+    margin: 0.3rem;
+    display: flex;
 }
+
+.archive {
+    margin: 0.3rem;
+}
+.profile {
+    margin: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    justify-items: right;
+
+}
+.interests {
+    margin: 0.3rem;
+    display: block;
+}
+.archive-button{
+    width: 9rem;
+    height: 2rem;
+    padding: 0.5rem  1.5rem;
+    margin: 0.3rem 0.5rem;
+    background-color: rgb(173, 172, 172);
+    border-radius: 0.3rem;
+}
+
+/*login*/
+.button-login:hover, .button-register:hover {
+    background-color:  #0022AA;
+    border: none;
+    font-style: 20px;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/*register, login*/
+.section-register, .section-login {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.label-field {
+    margin: 0.3rem
+}
+
+.field-div {
+    display: flex;
+}
+.field-text {
+    margin: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    justify-items: right;
+}
+.button-register, .button-login {
+    
+    width: 14rem;
+    height: 2rem;
+    padding: 0.5rem  1.5rem;
+    margin: 0.3rem 0.5rem;
+    background-color: rgb(173, 172, 172);
+    border-radius: 0.3rem;
+    border-color: rgb(173, 172, 172);
+
+}
+
+.field-button, .field-button-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.3rem;
+    
+}
+
+
 @media (min-width: 480px){
       
 
